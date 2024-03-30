@@ -22,7 +22,6 @@ function Product() {
 									<span className="product__item-price">{item.price} so'm</span>
 									<button className="product__item-add-to-card">
 										<ShoppingCart />
-										<span>Test</span>
 									</button>
 								</div>
 							</div>
