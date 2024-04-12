@@ -1,15 +1,18 @@
-import Navbar from "@/components/navbar/Navbar";
-import Product from "./components/product/Product";
+import { Navbar } from "@/components/";
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./router/";
+import { SingleRoute } from "./router";
 
 const App = () => {
-  return (
-    <div>
-      <Navbar />
-      <div className="container">
-        <Product />
-      </div>
-    </div>
-  );
+	return (
+		<div>
+			<Navbar />
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/:id" element={<SingleRoute />} />
+			</Routes>
+		</div>
+	);
 };
 
 export default App;
